@@ -70,6 +70,19 @@ def random_string():
     return random_list[random_item]
 
 def main():
+    # Set background image using custom CSS
+    st.markdown(
+        """
+        <style>
+        body {
+            background-image: url("chatbot_background.jpg");
+            background-size: cover;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    
     st.title('Type Here!')
     
     col1, col2 = st.columns([2, 1])
@@ -84,7 +97,7 @@ def main():
             user_input = ''  # Clear user input after submission
 
     with col2:
-        st.image("chatbot_icon.jpg", use_column_width='100')
+        st.image("chatbot_icon.jpg", use_column_width='auto')
         st.text('')  # Add an empty line
         
 
