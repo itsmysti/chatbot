@@ -82,7 +82,7 @@ def main():
             st.write(bot_response)
 
     with col2:
-        st.image("chatbot_icon.png", use_column_width='auto')
+        st.image("chatbot_icon.jpg", use_column_width='auto')
 
 if __name__ == "__main__":
     main()
