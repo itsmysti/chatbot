@@ -70,7 +70,7 @@ def random_string():
     return random_list[random_item]
 
 def main():
-    st.title('Talk with us!!')
+    st.title('Chatbot Application')
     
     col1, col2 = st.columns([2, 1])
 
@@ -80,9 +80,14 @@ def main():
             bot_response = get_response(user_input)
             st.text('Bot Response:')
             st.write(bot_response)
+            st.text('')  # Add an empty line
+            user_input = ''  # Clear user input after submission
 
     with col2:
-        st.image("chatbot_icon.jpg", use_column_width='auto')
+        st.image("chatbot_icon.png", use_column_width='auto')
+        st.text('')  # Add an empty line
+        st.text('User: ' + user_input)
+        st.text('Bot: ' + bot_response)
 
 if __name__ == "__main__":
     main()
