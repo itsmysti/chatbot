@@ -88,7 +88,7 @@ def main():
         unsafe_allow_html=True
     )
     
-    st.title('Type Here!')
+    st.title('Lets help you!')
     
     col1, col2 = st.columns([2, 1])
 
