@@ -1,0 +1,33 @@
+[
+  {
+    "response_type": "greeting",
+    "user_input": ["hello", "hi", "hey"],
+    "bot_response": "Hey there!",
+    "required_words": []
+  },
+  {
+    "response_type": "question",
+    "user_input": ["what", "are", "the", "fuctions"], 
+    "bot_response": "Start by typing: 'interior ai' or 'company projects'.",
+    "required_words": ["what", "functions"]
+  },
+  {
+    "response_type": "question",
+    "user_input": ["open", "interior", "ai"],
+    "bot_response": "here is the link for interior ai[here](https://www.youtube.com/watch?v=hQ1zzY9gcD8&t=3s)",
+    "required_words": ["interior", "ai"]
+  },
+  {
+    "response_type": "question",
+    "user_input": ["show", "me", "Company","projects"],
+    "bot_response": "here are the projects[here](https://www.youtube.com/watch?v=hQ1zzY9gcD8&t=3s)",
+    "required_words": ["projects", "show"]
+    
+  },
+  {
+    "response_type": "question",
+    "user_input": ["mysti", "sleep", "schedule"],
+    "bot_response": "mysti's sleep schedule is fucked, he needs to sleep T-T",
+    "required_words": ["mysti"]
+  }
+]
