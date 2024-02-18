@@ -72,11 +72,17 @@ def random_string():
 def main():
     st.title('Chatbot Application')
     
-    user_input = st.text_input('User Input', placeholder='Type your message here...')
-    if st.button('Submit'):
-        bot_response = get_response(user_input)
-        st.text('Bot Response:')
-        st.write(bot_response)
+    col1, col2 = st.beta_columns([2, 1])
+
+    with col1:
+        user_input = st.text_area('User Input', height=200, placeholder='Type your message here...')
+        if st.button('Submit'):
+            bot_response = get_response(user_input)
+            st.text('Bot Response:')
+            st.write(bot_response)
+
+    with col2:
+        st.image("chatbot_icon.png", use_column_width='auto')
 
 if __name__ == "__main__":
     main()
