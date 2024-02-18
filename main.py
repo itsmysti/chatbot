@@ -70,9 +70,9 @@ def random_string():
     return random_list[random_item]
 
 def main():
-    st.title('Chatbot Application')
+    st.title('Talk with us!!')
     
-    col1, col2 = st.beta_columns([2, 1])
+    col1, col2 = st.columns([2, 1])
 
     with col1:
         user_input = st.text_area('User Input', height=200, placeholder='Type your message here...')
