@@ -103,7 +103,7 @@ def main():
 
     with col2:
         st.image("chatbot_icon.jpg", use_column_width='auto')
-        st.text('')  # Add an empty line
+        st.text('')  
         
 
 if __name__ == "__main__":
