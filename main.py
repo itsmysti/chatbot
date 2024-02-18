@@ -84,7 +84,7 @@ def main():
             user_input = ''  # Clear user input after submission
 
     with col2:
-        st.image("chatbot_icon.png", use_column_width='auto')
+        st.image("chatbot_icon.jpg", use_column_width='auto')
         st.text('')  # Add an empty line
         st.text('User: ' + user_input)
         st.text('Bot: ' + bot_response)
