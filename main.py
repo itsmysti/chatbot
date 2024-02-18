@@ -1,7 +1,9 @@
 # main.py
-import json
+
+import streamlit as st
 import re
 import random
+import json
 
 # Load JSON data
 def load_json(file):
@@ -67,6 +69,14 @@ def random_string():
 
     return random_list[random_item]
 
-while True:
-    user_input = input("You: ")
-    print("Bot:", get_response(user_input))
+def main():
+    st.title('Chatbot Application')
+    
+    user_input = st.text_input('User Input', placeholder='Type your message here...')
+    if st.button('Submit'):
+        bot_response = get_response(user_input)
+        st.text('Bot Response:')
+        st.write(bot_response)
+
+if __name__ == "__main__":
+    main()
