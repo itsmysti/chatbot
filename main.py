@@ -87,7 +87,8 @@ def main():
         st.image("chatbot_icon.jpg", use_column_width='auto')
         st.text('')  # Add an empty line
         st.text('User: ' + user_input)
-        st.text('Bot: ' + bot_response)
+        if bot_response is not None:  # Check if bot_response is not None
+            st.text('Bot: ' + bot_response)
 
 if __name__ == "__main__":
     main()
