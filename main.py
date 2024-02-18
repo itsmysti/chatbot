@@ -70,7 +70,7 @@ def random_string():
     return random_list[random_item]
 
 def main():
-    st.title('Chatbot Application')
+    st.title('Type Here!')
     
     col1, col2 = st.columns([2, 1])
 
