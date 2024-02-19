@@ -102,7 +102,7 @@ def main():
             user_input = ''  # Clear user input after submission
 
     with col2:
-        st.image("#", use_column_width='auto')
+        st.image("chatbot_icon.jpg", use_column_width='auto')
         st.text('')  
         
 
