@@ -76,7 +76,7 @@ def main():
         <style>
         body {
             background-image: url("chatbot_background.jpg");
-            background-size: cover;
+            background-size: auto;
             background-position: center;
             background-repeat: no-repeat;
         }
